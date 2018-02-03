@@ -17,12 +17,14 @@ SET FOREIGN_KEY_CHECKS=1;
 CREATE TABLE user (
     uid INTEGER NOT NULL,
     uname VARCHAR(50) NOT NULL,
+    profilepic VARCHAR(500),
     PRIMARY KEY(uid)
 );
 
 CREATE TABLE recipe (
     rid INTEGER NOT NULL,
     rname VARCHAR(100) NOT NULL,
+    recipepic VARCHAR(500),
     prepTime TIME,
     cookTime TIME,
     totalTime TIME,
