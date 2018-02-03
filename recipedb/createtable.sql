@@ -71,5 +71,5 @@ CREATE TABLE recipesAtEvents (
     eventID INTEGER NOT NULL,
     recipeID INTEGER NOT NULL,
     FOREIGN KEY(eventID) REFERENCES event(eid),
-    FOREIGN KEY(recipeID) REFERENCES recipe(rid),
+    FOREIGN KEY(recipeID) REFERENCES recipe(rid)
 );
