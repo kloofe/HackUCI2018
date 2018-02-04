@@ -89,7 +89,6 @@
     font-style: italic
 };
 
-
 #react {
     background-color: #f4f4f4;
     width: 100%;
@@ -97,17 +96,45 @@
     margin: 0;
     padding: 0;
 }
+
 body {
+    background-color: #f4f4f4;
     font-family: "Apercu", sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     font-family: "Abril Fatface", sans-serif;
     font-size: 48px;
     letter-spacing: 1.5px;
     text-align: center;
+}
+
+h2 {
+    font-family: "Abril Fatface", sans-serif;
+    font-size: 36px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Abril Fatface", sans-serif;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+h4 {
+    font-family: "Abril Fatface", sans-serif;
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+ul li {
+    font-family: "Apercu", sans-serif;
+    font-weight: 300;
 }
 
 table {
@@ -137,39 +164,39 @@ table > tbody > tr:first-child > th {
 }
 
 .textAlignCenter {
-	text-align: center;
+  text-align: center;
 }
 
 .textAlignRight {
-	text-align: right;
+  text-align: right;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto: :300,400');
 
 #home {
-	background-color: #F4F4F4; 
-	font-family: 'Abril Fatface'; 
-	letter-spacing: 1.5px;
+  background-color: #F4F4F4;
+  font-family: 'Abril Fatface';
+  letter-spacing: 1.5px;
 }
 
 p {
-	font-family: 'Roboto', sans-serif;
-	letter-spacing: 0.5px;
-	font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 300;
 
 }
 
 .profile-img {
-	text-align: center; 
-	padding: 75px 0px 50px;
+  text-align: center;
+  padding: 75px 0px 50px;
 }
 
 hr {
-	width: 90%;
+  width: 90%;
 }
 
 /* @Navigation Bar */
-#navigation .navbar-nav { 
+#navigation .navbar-nav {
   width: 100%;
   text-align: center;
   padding-top: 15px;
@@ -190,7 +217,7 @@ hr {
 }
 
 .recipes {
-	text-align: center;
+  text-align: center;
 }
 
 .recipeItem  {
@@ -200,17 +227,17 @@ hr {
 }
 
 .card-body {
-	background-color: white;
+  background-color: white;
 }
 
 #toggle-heart{
-	position: absolute;
-  	left: -100vw;
+  position: absolute;
+      left:100vw;
 }
 
 input[id=toggle-heart]:checked + label {
- 
-    color: #e2264d;  
+
+    color: #e2264d;
 }
 
 [for='toggle-heart'] {
@@ -221,16 +248,16 @@ input[id=toggle-heart]:checked + label {
 }
 
 #overlay {
-	padding: 3px 0px;
-	color: white; 
-	background-color: #E79A8E;
+  padding: 3px 0px;
+  color: white;
+  background-color: #E79A8E;
 }
 
 
 #addRecipes {
-	float: right;
+  float: right;
 }
 
 .float-right-ahhh {
-	float: right;
+  float: right;
 }
