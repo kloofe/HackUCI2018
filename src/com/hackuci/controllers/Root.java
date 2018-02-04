@@ -21,6 +21,7 @@ public class Root {
         return "index";
     }
 
+    /*
     // Get recipes for a specific event
     @RequestMapping(value = "/events/{eid}", method = RequestMethod.GET)
     @ResponseBody 
@@ -62,5 +63,7 @@ public class Root {
     	    System.out.println("VendorError: " + ex.getErrorCode());
     	}
     	
+    	
     }
+    */
 }
