@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 export default class Banner extends React.Component {
 	constructor(props) {
@@ -15,9 +16,9 @@ export default class Banner extends React.Component {
 	            </div>
 	            <div id = "navigation">
 	                <ul className="navbar-nav">
-	                    <li><a href="#">Personal</a></li>
-	                    <li><a href="#">Events</a></li>
-	                    <li><a href="#">Favorites</a></li>
+	                    <li><Link to={'/HackUCI2018'}>Personal</Link></li>
+	                    <li><Link to={'/HackUCI2018/events'}>Events</Link></li>
+	                    <li><Link to={'/HackUCI2018'}>Favorites</Link></li>
 	                </ul> 
 	            </div>
 	            <hr />
