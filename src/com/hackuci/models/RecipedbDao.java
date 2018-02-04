@@ -1,11 +1,19 @@
 package com.hackuci.models;
 
+import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementCreator;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
+
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.PreparedStatement;
 
 public class RecipedbDao {
     @Autowired
@@ -80,5 +88,59 @@ public class RecipedbDao {
     	}
     	
     	return ingredients;
+    }
+    
+    public List<Eevent> allEventsQuery() {
+    	System.out.println("Querying all events");
+    	List<Eevent> events = new ArrayList<Eevent>();
+    	
+    	List<Map<String, Object>> item = connection.queryForList(
+    			"SELECT e.ename, e.location, e.edate " + 
+    			"FROM event as e;");
+    	
+    	for(Map<String, Object> row : item ) {
+    		Eevent temp = new Eevent();
+
+    		temp.setEname((String)(row.get("ename")));
+    		temp.setLocation((String)(row.get("location")));
+    		temp.setEdate((Timestamp)(row.get("edate")));
+    		
+    		events.add(temp);
+    	}
+    	
+    	return events;
+    	
+    }
+    
+    public void recipeInsertion(RequestWrapper requestWrapper) {
+    	
+    	String sql = "INSERT INTO recipe (rname, recipepic, prepTime, cookTime, totalTime, steps) VALUES(" + requestWrapper.getRcpe().getRecipeName() + ", " 
+    																									   + requestWrapper.getRcpe().getRecipePic()  + ", "
+    																									   + requestWrapper.getRcpe().getPrepTime()   + ", "
+    																									   + requestWrapper.getRcpe().getCookTime()   + ", "
+    																									   + requestWrapper.getRcpe().getTotalTime()  + ", "
+    																									   + requestWrapper.getRcpe().getSteps()      + ");";
+    	KeyHolder holder = new GeneratedKeyHolder();
+    	
+    	// Is not working rn
+    	connection.update(new PreparedStatementCreator() {           
+    	    @Override
+    	    public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
+    	        PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+    	        ps.setString(1, templateRequest.getTitle());
+    	        ps.setString(2, templateRequest.getDecription());        
+    	        return ps;
+    	    }
+    	}, holder);
+    	 
+    	Long request_id = holder.getKey().longValue();
+    	
+    	for(int i = 0; i < requestWrapper.getIngrdnts().size(); i++)
+    	{
+    		connection.update("INSERT INTO ingredient (iname, quantity) VALUES(" + requestWrapper.getIngrdnts().get(i).getIname() + ", "
+    																			 + requestWrapper.getIngrdnts().get(i).getQuantity() + ");");
+    		
+    	}
+    	
     }
 }
