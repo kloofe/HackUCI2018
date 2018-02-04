@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+	function getUrl() {
+       	var recipeURL = document.getElementById("url").value;
+	    var apiURL = "https://choppingboard.recipes/api/v0/recipe?key=f7fcdc2940300ff8f0a4c56132e6a54e&q=";
+	    var url =apiURL+recipeURL;
+		var json_obj = JSON.parse(Get(url));
+		//alert("this is the recipe name: "+json_obj.name);
+
+		var obj = '{'
+	       +'"name" :"' + json_obj.name +'",' 
+	       + '"prepTime" :"' + json_obj.prepTime +'",' 
+	       + '"cookTime" :"' + json_obj.cookTime +'",'
+	       + '"totalTime" :"' + json_obj.totalTime +'"' 
+	       +'}';
+
+	    alert(obj.toString());
+		// obj.name = json_obj.name;
+		// obj.prepTime = json_obj.prepTime;
+		// obj.cookTime = json_obj.cookTime;
+		// obj.totalTime = json_obj.totalTime;
+		// obj.instructions = json_obj.instructions;
+		// obj.ingredients = json_obj.ingredients;
+		// var jsonString= JSON.stringify(obj);
+		// var message;
+		// var json = new JSONObject();
+		
+		// json.put("name", json_obj.name);
+		// json.put("prepTime", json_obj.prepTime);
+		// json.put("cookTime", json_obj.cookTime);
+		// json.put("totalTime", json_obj.totalTime);
+		
+		// var arrayIng = new JSONArray();
+		// var arrayInstr = new JSONArray();
+		// arrayInstr.put( json_obj.instructions);
+		// arrayIng.put(json_obj.ingredients);
+		// json.put("ingredients", arrayIng);
+		// json.put("instructions", arrayInstr);
+		
+		// message = json.toString();
+
+		//console.log(JSON.parse(obj));
+    }
+
+	function Get(yourURL){
+	    var Httpreq = new XMLHttpRequest(); // a new request
+	    Httpreq.open("GET",yourURL,true);
+	    Httpreq.send(null);
+	    return Httpreq.responseText;          
+	}
+
+
+
+</script>
+
+<body>
+	
+    <form id="myForm">
+        Paste the URL to your favorite recipe:<br>
+        <input type="text" name="urlForTheRecipe" id="url">
+        <br>
+        <input type="submit" value="Submit" onclick="getUrl()">
+    </form>
+
+    <h2 id="json"></h2>
+
+</body>
+</html>
