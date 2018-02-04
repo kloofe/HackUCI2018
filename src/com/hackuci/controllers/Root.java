@@ -28,6 +28,8 @@ public class Root {
     		@PathVariable("eid") long eid) 
     {
     	System.out.println("Get all recipes for event #" + eid);
+    	
+    	queryForRecipesForEvent(eid);
     	return "Get all recipes for event #" + eid + "\n";
     }
     
@@ -38,6 +40,7 @@ public class Root {
     	ResultSet rs = null;
     	
     	// TODO: This doesn't work on my computer for some reason - debug - Trevor
+    	
     	try {
     	    conn = DriverManager.getConnection("jdbc:mysql://localhost/events/" + eid);
 
@@ -58,5 +61,6 @@ public class Root {
     	    System.out.println("SQLState: " + ex.getSQLState());
     	    System.out.println("VendorError: " + ex.getErrorCode());
     	}
+    	
     }
 }

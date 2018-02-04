@@ -1,6 +1,8 @@
 CREATE DATABASE IF NOT EXISTS recipedb;
 USE recipedb;
 
+GRANT ALL PRIVILEGES ON *.* TO 'lol'@'localhost' IDENTIFIED BY 'temp';
+
 -- Used to make changes to tables without any errors in creating them
 SET FOREIGN_KEY_CHECKS=0;
 DROP TABLE IF EXISTS user;
@@ -25,9 +27,9 @@ CREATE TABLE recipe (
     rid INTEGER NOT NULL,
     rname VARCHAR(100) NOT NULL,
     recipepic VARCHAR(500),
-    prepTime TIME,
-    cookTime TIME,
-    totalTime TIME,
+    prepTime VARCHAR(50),
+    cookTime VARCHAR(50),
+    totalTime VARCHAR(50),
     steps VARCHAR(2000),
     PRIMARY KEY(rid)
 );
