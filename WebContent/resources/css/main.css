@@ -3,92 +3,99 @@
 
 @font-face {
     font-family: "Apercu";
-    src: url("fonts/apercu-light-webfont.eot");
-    src: url("fonts/apercu-light-webfont.eot?#iefix") format("embedded-opentype"),
-         url("fonts/apercu-light-webfont.woff") format("woff"),
-         url("fonts/apercu-light-webfont.ttf") format("truetype"),
-         url("fonts/apercu-light-webfont.svg#apercu-light-webfont") format("svg");
+    src: url("../fonts/apercu-light-webfont.eot");
+    src: url("../fonts/apercu-light-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/apercu-light-webfont.woff") format("woff"),
+         url("../fonts/apercu-light-webfont.ttf") format("truetype"),
+         url("../fonts/apercu-light-webfont.svg#apercu-light-webfont") format("svg");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Apercu";
-    src: url("fonts/apercu-lightitalic-webfont.eot");
-    src: url("fonts/apercu-lightitalic-webfont.eot?#iefix") format("embedded-opentype"),
-         url("fonts/apercu-lightitalic-webfont.woff") format("woff"),
-         url("fonts/apercu-lightitalic-webfont.ttf") format("truetype"),
-         url("fonts/apercu-lightitalic-webfont.svg#apercu-lightitalic-webfont") format("svg");
+    src: url("../fonts/apercu-lightitalic-webfont.eot");
+    src: url("../fonts/apercu-lightitalic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/apercu-lightitalic-webfont.woff") format("woff"),
+         url("../fonts/apercu-lightitalic-webfont.ttf") format("truetype"),
+         url("../fonts/apercu-lightitalic-webfont.svg#apercu-lightitalic-webfont") format("svg");
     font-weight: 300;
     font-style: italic
 }
 
 @font-face {
     font-family: "Apercu";
-    src: url("fonts/apercu-regular-webfont.eot");
-    src: url("fonts/apercu-regular-webfont.eot?#iefix") format("embedded-opentype"),
-         url("fonts/apercu-regular-webfont.woff") format("woff"),
-         url("fonts/apercu-regular-webfont.ttf") format("truetype"),
-         url("fonts/apercu-regular-webfont.svg#apercu-regular-webfont") format("svg");
+    src: url("../fonts/apercu-regular-webfont.eot");
+    src: url("../fonts/apercu-regular-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/apercu-regular-webfont.woff") format("woff"),
+         url("../fonts/apercu-regular-webfont.ttf") format("truetype"),
+         url("../fonts/apercu-regular-webfont.svg#apercu-regular-webfont") format("svg");
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: "Apercu";
-    src: url("fonts/apercu-italic-webfont.eot");
-    src: url("fonts/apercu-italic-webfont.eot?#iefix") format("embedded-opentype"),
-         url("fonts/apercu-italic-webfont.woff") format("woff"),
-         url("fonts/apercu-italic-webfont.ttf") format("truetype"),
-         url("fonts/apercu-italic-webfont.svg#apercu-italic-webfont") format("svg");
+    src: url("../fonts/apercu-italic-webfont.eot");
+    src: url("../fonts/apercu-italic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/apercu-italic-webfont.woff") format("woff"),
+         url("../fonts/apercu-italic-webfont.ttf") format("truetype"),
+         url("../fonts/apercu-italic-webfont.svg#apercu-italic-webfont") format("svg");
     font-weight: 400;
     font-style: italic
 }
 
 @font-face {
     font-family: "Apercu";
-    src: url("fonts/apercu-medium-webfont.eot");
-    src: url("fonts/apercu-medium-webfont.eot?#iefix") format("embedded-opentype"),
-         url("fonts/apercu-medium-webfont.woff") format("woff"),
-         url("fonts/apercu-medium-webfont.ttf") format("truetype"),
-         url("fonts/apercu-medium-webfont.svg#apercu-medium-webfont") format("svg");
+    src: url("../fonts/apercu-medium-webfont.eot");
+    src: url("../fonts/apercu-medium-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/apercu-medium-webfont.woff") format("woff"),
+         url("../fonts/apercu-medium-webfont.ttf") format("truetype"),
+         url("../fonts/apercu-medium-webfont.svg#apercu-medium-webfont") format("svg");
     font-weight: 500;
     font-style: normal
 }
 
 @font-face {
     font-family: "Apercu";
-    src: url("fonts/apercu-mediumitalic-webfont.eot");
-    src: url("fonts/apercu-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"),
-         url("fonts/apercu-mediumitalic-webfont.woff") format("woff"),
-         url("fonts/apercu-mediumitalic-webfont.ttf") format("truetype"),
-         url("fonts/apercu-mediumitalic-webfont.svg#apercu-mediumitalic-webfont") format("svg");
+    src: url("../fonts/apercu-mediumitalic-webfont.eot");
+    src: url("../fonts/apercu-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/apercu-mediumitalic-webfont.woff") format("woff"),
+         url("../fonts/apercu-mediumitalic-webfont.ttf") format("truetype"),
+         url("../fonts/apercu-mediumitalic-webfont.svg#apercu-mediumitalic-webfont") format("svg");
     font-weight: 500;
     font-style: italic
 }
 
 @font-face {
     font-family: ""Apercu"";
-    src: url("fonts/apercu-bold-webfont.eot");
-    src: url("fonts/apercu-bold-webfont.eot?#iefix") format("embedded-opentype"),
-         url("fonts/apercu-bold-webfont.woff") format("woff"),
-         url("fonts/apercu-bold-webfont.ttf") format("truetype"),
-         url("fonts/apercu-bold-webfont.svg#apercu-bold-webfont") format("svg");
+    src: url("../fonts/apercu-bold-webfont.eot");
+    src: url("../fonts/apercu-bold-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/apercu-bold-webfont.woff") format("woff"),
+         url("../fonts/apercu-bold-webfont.ttf") format("truetype"),
+         url("../fonts/apercu-bold-webfont.svg#apercu-bold-webfont") format("svg");
     font-weight: 700;
     font-style: normal
 }
 
 @font-face {
     font-family: "Apercu";
-    src: url("fonts/apercu-bolditalic-webfont.eot");
-    src: url("fonts/apercu-bolditalic-webfont.eot?#iefix") format("embedded-opentype"),
-         url("fonts/apercu-bolditalic-webfont.woff") format("woff"),
-         url("fonts/apercu-bolditalic-webfont.ttf") format("truetype"),
-         url("fonts/apercu-bolditalic-webfont.svg#apercu-bolditalic-webfont") format("svg");
+    src: url("../fonts/apercu-bolditalic-webfont.eot");
+    src: url("../fonts/apercu-bolditalic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/apercu-bolditalic-webfont.woff") format("woff"),
+         url("../fonts/apercu-bolditalic-webfont.ttf") format("truetype"),
+         url("../fonts/apercu-bolditalic-webfont.svg#apercu-bolditalic-webfont") format("svg");
     font-weight: 700;
     font-style: italic
 };
 
+#react {
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-color: #f4f4f4;
@@ -154,4 +161,103 @@ table > tbody > tr:first-child > th {
 .row {
     margin-top: 30px;
     margin-bottom: 30px
+}
+
+.textAlignCenter {
+  text-align: center;
+}
+
+.textAlignRight {
+  text-align: right;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto: :300,400');
+
+#home {
+  background-color: #F4F4F4;
+  font-family: 'Abril Fatface';
+  letter-spacing: 1.5px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+
+}
+
+.profile-img {
+  text-align: center;
+  padding: 75px 0px 50px;
+}
+
+hr {
+  width: 90%;
+}
+
+/* @Navigation Bar */
+#navigation .navbar-nav {
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+  display: inline-block;
+}
+
+#navigation .navbar-nav li {
+  display: inline-block;
+  float: none;
+  font-size: 1.2em;
+
+}
+
+#navigation .navbar-nav li > a {
+  color: black;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.recipes {
+  text-align: center;
+}
+
+#recipeItem  {
+  width: 20rem; border: 0;
+  background-color: #F4F4F4;
+  margin: 1.5rem;
+}
+
+.card-body {
+  background-color: white;
+}
+
+#toggle-heart{
+  position: absolute;
+      left:100vw;
+}
+
+input[id=toggle-heart]:checked + label {
+
+    color: #e2264d;
+}
+
+[for='toggle-heart'] {
+    align-self: center;
+    color: #aab8c2;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#overlay {
+  padding: 3px 0px;
+  color: white;
+  background-color: #E79A8E;
+}
+
+
+#addRecipes {
+  float: right;
+}
+
+.float-right-ahhh {
+  float: right;
 }
