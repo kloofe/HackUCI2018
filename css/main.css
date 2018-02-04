@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Inconsolata:400,700');
+
+@font-face {
+    font-family: "Apercu";
+    src: url("fonts/apercu-light-webfont.eot");
+    src: url("fonts/apercu-light-webfont.eot?#iefix") format("embedded-opentype"),
+         url("fonts/apercu-light-webfont.woff") format("woff"),
+         url("fonts/apercu-light-webfont.ttf") format("truetype"),
+         url("fonts/apercu-light-webfont.svg#apercu-light-webfont") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Apercu";
+    src: url("fonts/apercu-lightitalic-webfont.eot");
+    src: url("fonts/apercu-lightitalic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("fonts/apercu-lightitalic-webfont.woff") format("woff"),
+         url("fonts/apercu-lightitalic-webfont.ttf") format("truetype"),
+         url("fonts/apercu-lightitalic-webfont.svg#apercu-lightitalic-webfont") format("svg");
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Apercu";
+    src: url("fonts/apercu-regular-webfont.eot");
+    src: url("fonts/apercu-regular-webfont.eot?#iefix") format("embedded-opentype"),
+         url("fonts/apercu-regular-webfont.woff") format("woff"),
+         url("fonts/apercu-regular-webfont.ttf") format("truetype"),
+         url("fonts/apercu-regular-webfont.svg#apercu-regular-webfont") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Apercu";
+    src: url("fonts/apercu-italic-webfont.eot");
+    src: url("fonts/apercu-italic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("fonts/apercu-italic-webfont.woff") format("woff"),
+         url("fonts/apercu-italic-webfont.ttf") format("truetype"),
+         url("fonts/apercu-italic-webfont.svg#apercu-italic-webfont") format("svg");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Apercu";
+    src: url("fonts/apercu-medium-webfont.eot");
+    src: url("fonts/apercu-medium-webfont.eot?#iefix") format("embedded-opentype"),
+         url("fonts/apercu-medium-webfont.woff") format("woff"),
+         url("fonts/apercu-medium-webfont.ttf") format("truetype"),
+         url("fonts/apercu-medium-webfont.svg#apercu-medium-webfont") format("svg");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Apercu";
+    src: url("fonts/apercu-mediumitalic-webfont.eot");
+    src: url("fonts/apercu-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("fonts/apercu-mediumitalic-webfont.woff") format("woff"),
+         url("fonts/apercu-mediumitalic-webfont.ttf") format("truetype"),
+         url("fonts/apercu-mediumitalic-webfont.svg#apercu-mediumitalic-webfont") format("svg");
+    font-weight: 500;
+    font-style: italic
+}
+
+@font-face {
+    font-family: ""Apercu"";
+    src: url("fonts/apercu-bold-webfont.eot");
+    src: url("fonts/apercu-bold-webfont.eot?#iefix") format("embedded-opentype"),
+         url("fonts/apercu-bold-webfont.woff") format("woff"),
+         url("fonts/apercu-bold-webfont.ttf") format("truetype"),
+         url("fonts/apercu-bold-webfont.svg#apercu-bold-webfont") format("svg");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Apercu";
+    src: url("fonts/apercu-bolditalic-webfont.eot");
+    src: url("fonts/apercu-bolditalic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("fonts/apercu-bolditalic-webfont.woff") format("woff"),
+         url("fonts/apercu-bolditalic-webfont.ttf") format("truetype"),
+         url("fonts/apercu-bolditalic-webfont.svg#apercu-bolditalic-webfont") format("svg");
+    font-weight: 700;
+    font-style: italic
+};
+
+
+body {
+    background-color: #f4f4f4;
+    font-family: "Apercu", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Abril Fatface", sans-serif;
+    font-size: 48px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+table {
+    table-layout: fixed;
+    padding-bottom: 15px;
+    font-family: "Apercu", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0px auto;
+}
+
+table > tbody > tr:first-child > td {
+    border: none;
+}
+
+table > tbody > tr:first-child > th {
+    border: none;
+}
+
+.table tbody tr:hover td, .table tbody tr:hover th {
+    background-color: #c1f0f0;
+}
+
+.row {
+    margin-top: 30px;
+    margin-bottom: 30px
+}
