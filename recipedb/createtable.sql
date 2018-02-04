@@ -1,8 +1,6 @@
 CREATE DATABASE IF NOT EXISTS recipedb;
 USE recipedb;
 
-GRANT ALL PRIVILEGES ON *.* TO 'lol'@'localhost' IDENTIFIED BY 'temp';
-
 -- Used to make changes to tables without any errors in creating them
 SET FOREIGN_KEY_CHECKS=0;
 DROP TABLE IF EXISTS user;
@@ -17,14 +15,14 @@ SET FOREIGN_KEY_CHECKS=1;
 
 -- Table structure for users
 CREATE TABLE user (
-    uid INTEGER NOT NULL,
+    uid INTEGER NOT NULL AUTO_INCREMENT,
     uname VARCHAR(50) NOT NULL,
     profilepic VARCHAR(500),
     PRIMARY KEY(uid)
 );
 
 CREATE TABLE recipe (
-    rid INTEGER NOT NULL,
+    rid INTEGER NOT NULL AUTO_INCREMENT,
     rname VARCHAR(100) NOT NULL,
     recipepic VARCHAR(500),
     prepTime VARCHAR(50),
@@ -35,13 +33,14 @@ CREATE TABLE recipe (
 );
 
 CREATE TABLE ingredient (
-    iid INTEGER NOT NULL,
+    iid INTEGER NOT NULL AUTO_INCREMENT,
     iname VARCHAR(100) NOT NULL,
+    quantity VARCHAR(50) NOT NULL,
     PRIMARY KEY(iid)
 );
 
 CREATE TABLE event (
-    eid INTEGER NOT NULL,
+    eid INTEGER NOT NULL AUTO_INCREMENT,
     ename VARCHAR(100) NOT NULL,
     location VARCHAR(200) NOT NULL,
     edate DATETIME NOT NULL,
@@ -51,7 +50,6 @@ CREATE TABLE event (
 CREATE TABLE ingredientsInRecipe (
     recipeID INTEGER NOT NULL,
     ingredientID INTEGER NOT NULL,
-    quantity VARCHAR(50) NOT NULL,
     FOREIGN KEY(recipeID) REFERENCES recipe(rid),
     FOREIGN KEY(ingredientID) REFERENCES ingredient(iid)
 );
