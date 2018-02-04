@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto: :300,400');
+
+element.style {
+	width:100%;
+}
+
+.container {
+	padding-top: 15px;
+	position: relative;
+    text-align: center;
+    font-family: 'Abril Fatface'; 
+    font-size: 20px;
+}
+
+.eventHeader {
+	font-size: 60px;
+}
+
+.eventHeader2 {
+	font-size: 30px;
+}
+
+.centered {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row {
+	margin-right: 150px;
+	margin-left: 150px;
+}
