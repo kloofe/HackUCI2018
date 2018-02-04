@@ -104,7 +104,7 @@ for i in range(1, 10):
 
 #insert into ingredient
 for i in range(1, 20):
-	line = "INSERT INTO ingredient VALUES(" + str(i) + ", '" + recipes[i] + "');\n"
+	line = "INSERT INTO ingredient VALUES(" + str(i) + ", '" + recipes[i] + "', '2 cups');\n"
 	f.write(line)
 
 #insert into event
@@ -116,9 +116,9 @@ for i in range(1, 20):
 c = 1
 for i in range(1, 10):
 	c2 = c + 1
-	line = "INSERT INTO ingredientsInRecipe VALUES(" + str(i) + ", " + str(c) + ", '2 cups');\n"
+	line = "INSERT INTO ingredientsInRecipe VALUES(" + str(i) + ", " + str(c) + ");\n"
 	f.write(line)
-	line = "INSERT INTO ingredientsInRecipe VALUES(" + str(i) + ", " + str(c2) + ", '1 cup');\n"
+	line = "INSERT INTO ingredientsInRecipe VALUES(" + str(i) + ", " + str(c2) + ");\n"
 	f.write(line)
 	c += 1
 
