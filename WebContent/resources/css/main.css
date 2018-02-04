@@ -220,10 +220,22 @@ hr {
   text-align: center;
 }
 
-#recipeItem  {
-  width: 20rem; border: 0;
-  background-color: #F4F4F4;
-  margin: 1.5rem;
+
+
+
+
+
+
+
+
+
+
+
+
+.recipeItem  {
+	width: 20rem; border: 0; 
+	background-color: #F4F4F4;
+	margin: 1.5rem;
 }
 
 .card-body {
