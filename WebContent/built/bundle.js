@@ -25553,9 +25553,13 @@
 	
 	var _home2 = _interopRequireDefault(_home);
 	
-	var _events = __webpack_require__(226);
+	var _events = __webpack_require__(227);
 	
 	var _events2 = _interopRequireDefault(_events);
+	
+	var _navForTwoPages = __webpack_require__(226);
+	
+	var _navForTwoPages2 = _interopRequireDefault(_navForTwoPages);
 	
 	var _reactRouterDom = __webpack_require__(184);
 	
@@ -25581,12 +25585,16 @@
 			value: function render() {
 				return _react2.default.createElement(
 					'div',
-					{ id: 'main' },
+					null,
 					_react2.default.createElement(
-						_reactRouterDom.Switch,
-						null,
-						_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/HackUCI2018', component: _home2.default }),
-						_react2.default.createElement(_reactRouterDom.Route, { path: '/HackUCI2018/events', component: _events2.default })
+						'div',
+						{ id: 'main' },
+						_react2.default.createElement(
+							_reactRouterDom.Switch,
+							null,
+							_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/HackUCI2018', component: _home2.default }),
+							_react2.default.createElement(_reactRouterDom.Route, { path: '/HackUCI2018/events', component: _events2.default })
+						)
 					)
 				);
 			}
@@ -25599,7 +25607,7 @@
 /* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 		value: true
@@ -25610,6 +25618,10 @@
 	var _react = __webpack_require__(183);
 	
 	var _react2 = _interopRequireDefault(_react);
+	
+	var _navForTwoPages = __webpack_require__(226);
+	
+	var _navForTwoPages2 = _interopRequireDefault(_navForTwoPages);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -25629,12 +25641,134 @@
 		}
 	
 		_createClass(Home, [{
-			key: "render",
+			key: 'render',
 			value: function render() {
 				return _react2.default.createElement(
-					"div",
-					{ id: "home" },
-					"This is the home page"
+					'div',
+					{ id: 'home' },
+					_react2.default.createElement(_navForTwoPages2.default, null),
+					_react2.default.createElement(
+						'div',
+						{ className: 'content container' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'row recipes' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'card', id: 'recipeItem' },
+								_react2.default.createElement(
+									'a',
+									{ href: '' },
+									_react2.default.createElement('img', { className: 'card-img-top', src: '/Users/brookely/Downloads/sandwich.jpg', alt: 'Card image cap' })
+								),
+								_react2.default.createElement(
+									'div',
+									null,
+									' ',
+									_react2.default.createElement(
+										'h6',
+										{ id: 'overlay' },
+										'[Insert Prep Time]'
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'card-body' },
+									_react2.default.createElement(
+										'h3',
+										{ className: 'card-title' },
+										'BLT Sandie',
+										_react2.default.createElement('input', { id: 'toggle-heart', type: 'checkbox' }),
+										_react2.default.createElement(
+											'label',
+											{ 'for': 'toggle-heart', className: 'float-right-ahhh' },
+											'\u2764'
+										)
+									),
+									_react2.default.createElement(
+										'p',
+										{ className: 'card-text' },
+										'This is a recipe of a sandwich!'
+									)
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'card', id: 'recipeItem' },
+								_react2.default.createElement('img', { 'class': 'card-img-top', src: '/Users/brookely/Downloads/sandwich.jpg', alt: 'Card image cap' }),
+								_react2.default.createElement(
+									'div',
+									null,
+									' ',
+									_react2.default.createElement(
+										'h6',
+										{ id: 'overlay' },
+										'[Insert Prep Time]'
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ 'class': 'card-body' },
+									_react2.default.createElement(
+										'h3',
+										{ 'class': 'card-title' },
+										'BLT Sandie',
+										_react2.default.createElement('input', { id: 'toggle-heart', type: 'checkbox' }),
+										_react2.default.createElement(
+											'label',
+											{ 'for': 'toggle-heart', className: 'float-right-ahhh' },
+											'\u2764'
+										)
+									),
+									_react2.default.createElement(
+										'p',
+										{ 'class': 'card-text' },
+										'This is a recipe of a sandwich!'
+									)
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'card', id: 'recipeItem' },
+								_react2.default.createElement('img', { 'class': 'card-img-top', src: '/Users/brookely/Downloads/sandwich.jpg', alt: 'Card image cap' }),
+								_react2.default.createElement(
+									'div',
+									null,
+									' ',
+									_react2.default.createElement(
+										'h6',
+										{ id: 'overlay' },
+										'[Insert Prep Time]'
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ 'class': 'card-body' },
+									_react2.default.createElement(
+										'h3',
+										{ 'class': 'card-title' },
+										'BLT Sandie',
+										_react2.default.createElement('input', { id: 'toggle-heart', type: 'checkbox' }),
+										_react2.default.createElement(
+											'label',
+											{ 'for': 'toggle-heart', className: 'float-right-ahhh' },
+											'\u2764'
+										)
+									),
+									_react2.default.createElement(
+										'p',
+										{ 'class': 'card-text' },
+										'This is a recipe of a sandwich!'
+									)
+								)
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ id: 'addRecipes' },
+							_react2.default.createElement('i', { 'class': 'fas fa-plus-circle fa-3x' })
+						)
+					)
 				);
 			}
 		}]);
@@ -25668,6 +25802,106 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
+	var Banner = function (_React$Component) {
+		_inherits(Banner, _React$Component);
+	
+		function Banner(props) {
+			_classCallCheck(this, Banner);
+	
+			return _possibleConstructorReturn(this, (Banner.__proto__ || Object.getPrototypeOf(Banner)).call(this, props));
+		}
+	
+		_createClass(Banner, [{
+			key: "render",
+			value: function render() {
+				return _react2.default.createElement(
+					"div",
+					{ className: "banner" },
+					_react2.default.createElement(
+						"div",
+						{ className: "container profile-img" },
+						_react2.default.createElement("i", { className: "fas fa-user-circle fa-10x" }),
+						_react2.default.createElement("div", { id: "profile-overlay" })
+					),
+					_react2.default.createElement(
+						"div",
+						{ id: "navigation" },
+						_react2.default.createElement(
+							"ul",
+							{ className: "navbar-nav" },
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement(
+									"a",
+									{ href: "#" },
+									"Personal"
+								)
+							),
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement(
+									"a",
+									{ href: "#" },
+									"Events"
+								)
+							),
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement(
+									"a",
+									{ href: "#" },
+									"Favorites"
+								)
+							)
+						)
+					),
+					_react2.default.createElement("hr", null)
+				);
+			}
+		}]);
+	
+		return Banner;
+	}(_react2.default.Component);
+	
+	exports.default = Banner;
+
+/***/ }),
+/* 227 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(183);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var fakeData = [{
+		date: 'November 28',
+		name: 'Friendsgiving',
+		location: "Mat's house"
+	}, {
+		date: 'November 28',
+		name: 'Friendsgiving',
+		location: "Mat's house"
+	}];
+	
 	var Events = function (_React$Component) {
 		_inherits(Events, _React$Component);
 	
@@ -25678,12 +25912,62 @@
 		}
 	
 		_createClass(Events, [{
-			key: "render",
-			value: function render() {
+			key: 'renderRow',
+			value: function renderRow(data) {
 				return _react2.default.createElement(
-					"div",
-					{ id: "events" },
-					"This is the events listing page"
+					'tr',
+					null,
+					_react2.default.createElement(
+						'th',
+						{ scope: 'row' },
+						data.date
+					),
+					_react2.default.createElement(
+						'td',
+						null,
+						data.name
+					),
+					_react2.default.createElement(
+						'td',
+						{ className: 'textAlignCenter' },
+						data.location
+					),
+					_react2.default.createElement(
+						'td',
+						{ className: 'textAlignRight' },
+						_react2.default.createElement(
+							'b',
+							null,
+							'Going'
+						),
+						' | Not going'
+					)
+				);
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+				var _this2 = this;
+	
+				return _react2.default.createElement(
+					'div',
+					{ id: 'events', className: 'content container' },
+					_react2.default.createElement(
+						'h3',
+						null,
+						'Upcoming Events'
+					),
+					_react2.default.createElement(
+						'table',
+						{ className: 'table table-hover w-75' },
+						_react2.default.createElement(
+							'tbody',
+							null,
+							fakeData.map(function (data) {
+								return _this2.renderRow(data);
+							})
+						)
+					)
 				);
 			}
 		}]);
