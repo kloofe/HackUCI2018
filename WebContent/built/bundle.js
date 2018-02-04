@@ -25634,7 +25634,16 @@
 				return _react2.default.createElement(
 					"div",
 					{ id: "home" },
-					"This is the home page"
+					_react2.default.createElement(
+						"title",
+						null,
+						"hi"
+					),
+					_react2.default.createElement(
+						"h1",
+						null,
+						" This is the home page!! "
+					)
 				);
 			}
 		}]);
