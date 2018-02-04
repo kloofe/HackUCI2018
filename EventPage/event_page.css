@@ -4,7 +4,8 @@ element.style {
 	width:100%;
 }
 
-.container {
+
+.eventContainer {
 	padding-top: 15px;
 	position: relative;
     text-align: center;
@@ -20,14 +21,14 @@ element.style {
 	font-size: 30px;
 }
 
-.centered {
+#eventPage .centered {
     position: absolute;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.row {
+#eventPage .row {
 	margin-right: 150px;
 	margin-left: 150px;
 }
