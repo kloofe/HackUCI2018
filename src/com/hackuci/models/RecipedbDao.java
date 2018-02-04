@@ -29,6 +29,7 @@ public class RecipedbDao {
     		temp.setCookTime((String)(row.get("cookTime")));
     		temp.setTotalTime((String)(row.get("totalTime")));
     		temp.setSteps((String)(row.get("steps")));
+            temp.setId((int)(row.get("recipeID")));
     		
     		recipes.add(temp);
     	}
@@ -39,7 +40,7 @@ public class RecipedbDao {
     public List<Recipe> userRecipesQuery(long uid) {
     	System.out.println("Getting recipe list");
     	List<Recipe> recipes = new ArrayList<Recipe>();
-    	
+    	System.out.println("Before query");
     	List<Map<String, Object>> item = connection.queryForList(
     			"SELECT r.rid, r.rname, r.recipepic, r.prepTime, r.cookTime, r.totalTime, r.steps, ur.recipeID " +
     			"FROM recipe as r, usersRecipes as ur " +
@@ -54,10 +55,11 @@ public class RecipedbDao {
     		temp.setCookTime((String)(row.get("cookTime")));
     		temp.setTotalTime((String)(row.get("totalTime")));
     		temp.setSteps((String)(row.get("steps")));
+    		temp.setId((int)(row.get("recipeID")));
     		
     		recipes.add(temp);
     	}
-    	
+    	System.out.println("Going to return");
     	return recipes;
     }
     

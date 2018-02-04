@@ -9,11 +9,12 @@ public class Recipe {
 	private String cookTime;
 	private String totalTime;
 	private String steps;
+	private int id;
 	
 	// Constructor
 	
 	Recipe(String recipeName, String recipePic, String prepTime, 
-				String cookTime, String totalTime, String steps)
+				String cookTime, String totalTime, String steps, int id)
 	{
 		this.recipeName = recipeName;
 		this.recipePic  = recipePic;
@@ -21,6 +22,7 @@ public class Recipe {
 		this.cookTime   = cookTime;
 		this.totalTime  = totalTime;
 		this.steps		= steps;
+		this.id         = id;
 	}
 
 	public Recipe() {
@@ -75,4 +77,11 @@ public class Recipe {
 		this.steps = steps;
 	}
 
+	public int getId() {
+	    return id;
+	}
+
+	public void setId(int id) {
+	    this.id = id;
+	}
 }

@@ -1,14 +1,33 @@
 import React from 'react';
 import Banner from './navForTwoPages.js';
+import RecipeCard from './recipeCard.js';
 import axios from 'axios';
 
 export default class Home extends React.Component {
 	constructor(props) {
 		super(props);
+		this.state = {
+			recipes: []
+		}
+
+		this.getRecipes = this.getRecipes.bind(this);
 	}
 
-	componentDidMount() {
+	componentWillMount() {
 		console.log("SDLKFJ:SLDKFJ");
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+=======
+>>>>>>> 7fcfd2d545943ed909ea530696e6172ef33d1a99
+=======
+>>>>>>> 7fcfd2d545943ed909ea530696e6172ef33d1a99
+=======
+>>>>>>> 7fcfd2d545943ed909ea530696e6172ef33d1a99
+
 		/*axios.get('https://choppingboard.recipes/api/v0/recipe', {
 		    params: {
 		      key: '9f68eae3200bc928e3693545ec1ae778',
@@ -22,41 +41,38 @@ export default class Home extends React.Component {
 		.catch(function (error) {
 			console.log(error);
 		});*/
+
+		this.getRecipes();
+	}
+
+	getRecipes() {
+		axios.get('/HackUCI2018/	api/user/1')
+		.then((response) => {
+			this.setState({recipes: response['data']});
+		})
+		.catch(function (error) {
+			console.log(error);
+		});
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7fcfd2d545943ed909ea530696e6172ef33d1a99
+=======
+>>>>>>> 7fcfd2d545943ed909ea530696e6172ef33d1a99
+=======
+>>>>>>> 7fcfd2d545943ed909ea530696e6172ef33d1a99
+=======
+>>>>>>> 7fcfd2d545943ed909ea530696e6172ef33d1a99
 	}
 	
 	render() {
+		console.log(this.state.recipes);
 		return (
 			<div id="home">
 				<Banner />
 				<div className="content container">
 	            <div className="row recipes">
-	                <div className="card" className="recipeItem">
-	                    <a href=""><img className="card-img-top" src="https://s3.amazonaws.com/neopets_pictures/Meepits2.PNG" alt="Card image cap" /></a>
-	                        <div> <h6 id="overlay">[Insert Prep Time]</h6></div>
-	                        <div className="card-body">
-	                            <h3 className="card-title">BLT Sandie<input id="toggle-heart" type="checkbox" /><label for="toggle-heart" className="float-right-ahhh">❤</label></h3>
-	                            <p className="card-text">This is a recipe of a sandwich!</p>
-	                        </div>
-	                        
-	                </div>
-
-	                <div className="card" className = "recipeItem">
-	                    <a href=""><img className="card-img-top" src="https://s3.amazonaws.com/neopets_pictures/Meepits2.PNG" alt="Card image cap" /></a>
-	                    <div> <h6 id="overlay">[Insert Prep Time]</h6></div>    
-	                        <div className="card-body">
-	                            <h3 className="card-title">BLT Sandie<input id="toggle-heart" type="checkbox" /><label for="toggle-heart" className="float-right-ahhh">❤</label></h3>
-	                            <p className="card-text">This is a recipe of a sandwich!</p>
-	                        </div>
-	                </div>
-
-	                <div className="card" className = "recipeItem">
-	                    <a href=""><img className="card-img-top" src="https://s3.amazonaws.com/neopets_pictures/Meepits2.PNG" alt="Card image cap" /></a>
-	                    <div> <h6 id="overlay">[Insert Prep Time]</h6></div>
-	                        <div className="card-body" >
-	                            <h3 className="card-title">BLT Sandie<input id="toggle-heart" type="checkbox" /><label for="toggle-heart" className="float-right-ahhh">❤</label></h3>
-	                            <p className="card-text">This is a recipe of a sandwich!</p>
-	                        </div>
-	                </div>
+	            	{this.state.recipes.map((recipe) => <RecipeCard recipe={recipe} key={recipe['id']}/>)}	                
 	            </div>
 
 	            <div id ="addRecipes"> 

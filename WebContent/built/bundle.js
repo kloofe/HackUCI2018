@@ -25646,18 +25646,6 @@
 			key: 'componentDidMount',
 			value: function componentDidMount() {
 				console.log("SDLKFJ:SLDKFJ");
-				/*axios.get('https://choppingboard.recipes/api/v0/recipe', {
-	       params: {
-	         key: '9f68eae3200bc928e3693545ec1ae778',
-	         q: 'http://allrecipes.com/recipe/8765/smothered-bacon-chicken/'
-	   		}
-	   })
-	   .then(function (response) {
-	   	console.log(response);
-	   })
-	   .catch(function (error) {
-	   	console.log(error);
-	   });*/
 			}
 		}, {
 			key: 'render',
